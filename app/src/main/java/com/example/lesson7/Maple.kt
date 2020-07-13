@@ -1,9 +1,12 @@
 package com.example.lesson7
 
+import android.content.Context
 import android.util.Log
+import android.widget.Toast
 
 class Maple: Plants() {
-    override fun toGrow() {
-        Log.d("_____", "Maple is growing")
+    override fun toGrow(context: Context) {
+        showToast(context,"Клён растет")
     }
+
 }

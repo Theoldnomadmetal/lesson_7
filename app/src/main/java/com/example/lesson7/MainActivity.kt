@@ -19,16 +19,16 @@ class MainActivity : AppCompatActivity() {
         val ash = Ash()
 
         btnoak.setOnClickListener {
-            oak.toGrow()
-            Toast.makeText(this, "Дуб растет",Toast.LENGTH_LONG).show()
+            oak.toGrow(this)
+
         }
         btnmaple.setOnClickListener {
-            maple.toGrow()
-            Toast.makeText(this, "Клён растет",Toast.LENGTH_LONG).show()
+            maple.toGrow(this)
+
         }
         btnAsh.setOnClickListener {
-            ash.toGrow()
-            Toast.makeText(this,"Ясень растет",Toast.LENGTH_LONG).show()
+            ash.toGrow(this)
+
         }
     }
 }
